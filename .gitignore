@@ -10,3 +10,4 @@ dist/
 TODO
 .pytest_cache/
 .tox/
+.mypy_cache
