@@ -1,6 +1,5 @@
 import copy
 
-from xcffib.xproto import StackMode
 from libqtile.layout.base import Layout
 
 from .node import Node, AddMode, NotRestorableError
@@ -96,8 +95,6 @@ class Plasma(Layout):
             self.group.qtile.color_pixel(border_color),
             margin=margin,
         )
-        # Always keep tiles below floating windows
-        client.window.configure(stackmode=StackMode.Below)
         client.unhide()
 
     def focus(self, client):
