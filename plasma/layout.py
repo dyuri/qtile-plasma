@@ -92,7 +92,7 @@ class Plasma(Layout):
             width-2*border_width,
             height-2*border_width,
             border_width,
-            self.group.qtile.color_pixel(border_color),
+            border_color,
             margin=margin,
         )
         client.unhide()
